@@ -3,10 +3,140 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <header class="main-header">
+      <a class="main-header-logo">
+        <img src="img/logo.svg" width="75" height="50" alt="Логотип Седоны">
+      </a>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="media.html">Фото и видео</a></li>
+          <li><a href="state-map.html">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+    <main class="container">
+      <h1 class="visually-hidden">Добро пожаловать в прекрасную Седону</h1>
+      <section class="index-top">
+        <!--Я так понимаю, все эти картинки нужно слить в одну, чтобы оптимизировать загрузку, максимум в две, растровую подложку и векторный текст, только не очень представляю, для чего это может быть нужно. Поэтому оставлю одну картинку, без ссылок куда-либо, ибо только декоративный элемент с небольшим текстом, но на всякий случай оставлю секцию--->
+        <img src="img/sedona-top.html" alt="Фотография Седоны">
+        <p class="top-text-big">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="top-text-small">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
+
+      <section class="features">
+        <h2 class="visually-hidden">Причина первая</h2>
+        <div class="feature feature-1">
+          <p class="feature-name">Настоящий<br>городок</p>
+          <p class="feature-number">— №1 —</p>
+          <p class="feature-text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <img src="img/feature-1.jpg" class="feature-1-photo" width="400" height="200" alt="Вид Седоны">
+      </section>
+
+      <section class="recomenations">
+        <h2 class="visually-hidden">Рекомендации</h2>
+        <ul class="recomendation-list">
+          <li class="recomendation-item">
+            <h3>Жилье</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="recomendation-item">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="recomendation-item">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="features">
+        <h2 class="visually-hidden">Причина вторая</h2>
+        <div class="feature feature-2">
+          <p class="feature-name">Там есть<br>мост дьявола</p>
+          <p class="feature-number">— №2 —</p>
+          <p class="feature-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+        <img src="img/feature-2.jpg" class="feature-2-photo" width="400" height="200" alt="Вид Седоны">
+      </section>
+
+      <section class="features">
+        <h2 class="visually-hidden">Остальные причины</h2>
+        <ul class="feature-list">
+          <li>
+            <div class="feature">
+              <p class="feature-name">Небольшая<br>площадь</p>
+              <p class="feature-number">— №3 —</p>
+              <p class="feature-text">Все достопримечательности находятся очень близко</p>
+            </div>
+          </li>
+          <li>
+            <div class="feature">
+              <p class="feature-name">Красивая дорога</p>
+              <p class="feature-number">— №4 —</p>
+              <p class="feature-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+          </li>
+          <li>
+            <div class="feature">
+              <p class="feature-name">Мало<br>туристов</p>
+              <p class="feature-number">— №5 —</p>
+              <p class="feature-text">Большинство едет в гранд каньон и толпится там</p>
+            </div>
+          </li>
+      </section>
+
+      <section class="order-form">
+        <h2 class="visually-hidden">Найти гостиницу и сделать заказ</h2>
+        <!--Вообще за этот заголовок вполне проканает название формы Поиск гостиницы в Седоне, но не знаю, как его выстянуть наверх-->
+        <p class="bottom-text-big">Заинтересовались?</p>
+        <p class="bottom-text-small">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+
+        <form class="order" action="http://html-academy.ru" method="get">
+          <fieldset>
+            <legend>Поиск гостиницы в седоне</legend>
+            <p class="order-form-field">
+              Дата заезда:
+              <input type="text" name="arrival" placeholder="24 апреля 2017">  <!--type="date"??-->
+            </p>
+            <p class="order-form-field">
+              Дата выезда:
+              <input type="text" name="departure" placeholder="4 июля 2017">
+            </p>
+            <p class="order-form-field order-form-number">
+              Взрослые:
+              <input type="number" name="adult" placeholder="2">
+            </p>
+            <p class="order-form-field order-form-number">
+              Дети:
+              <input type="number" name="childen" placeholder="2">
+            </p>
+            <input type="submit" class="button" value="Найти">
+          </fieldset>
+        </form>
+        <div class="map"></div> <!--Карта-->
+      </section>
+  </main>
+
+  <footer class="main-footer">
+    <p class="footer-tag">#visitsedona</p>
+    <ul class="social">
+      <li><a href="">Twitter</a></li>
+      <li><a href="">Facebook</a></li>
+      <li><a href="">Youtube</a></li>
+    </ul>
+    <p class="footer-logo">
+      <b>Website by</b>
+      <a href="http://html-academy.ru"><img src="img/html-logo.png" alt="HTML-academy"></a>
+    </p>
+  </footer>
 
   </body>
 </html>
