@@ -93,22 +93,26 @@
             <p class="order-form-field">
               <label for="arrival">Дата заезда:</label>
               <input type="text" name="arrival" id="arrival" placeholder="24 апреля 2017">
-              <img src="img/calendar.svg" width="21" height="22" alt="Календарь">
+              <button type="button" class="calendar"><img src="img/calendar.svg" width="21" height="22" alt="Календарь"></button>
             </p>
             <p class="order-form-field">
               <label for="departure">Дата выезда:</label>
               <input type="text" name="departure" id="departure" placeholder="4 июля 2017">
-              <img src="img/calendar.svg" width="21" height="22" alt="Календарь">
+              <button type="button" class="calendar"><img src="img/calendar.svg" width="21" height="22" alt="Календарь"></button>
             </p>
             <p class="order-form-field order-form-number">
               <label for="adult">Взрослые:</label>
+              <button type="button" class="number-less">less</button>
               <input type="number" name="adult" id="adult" placeholder="2">
+              <button type="button" class="number-more">more</button>
             </p>
             <p class="order-form-field order-form-number">
               <label for="childen">Дети:</label>
+              <button type="button" class="number-less">less</button>
               <input type="number" name="childen" id="childen" placeholder="2">
+              <button type="button" class="number-more">more</button>
             </p>
-            <button type="button" class="button">Найти</button>
+            <input type="submit" class="button" value="Найти">
           </fieldset>
         </form>
         <div class="map">
@@ -126,7 +130,7 @@
     </ul>
     <p class="footer-logo">
       <b>Website by</b>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-logo.png" alt="HTML-academy"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="115" height="41" alt="HTML-academy"></a>
     </p>
   </footer>
 
