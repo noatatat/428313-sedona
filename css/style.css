@@ -1,24 +1,383 @@
 body {
-  font-size: 14px;
-  line-height: 24px;
-  color: black;
-  text-transform: uppercase;
-  font-weight: normal;
-  font-family: "PTSans", "Arial", serif;
-  }
+  margin: 0;
+  padding: 0;
 
-﻿h1, h2, h3 {
-  font-weight: bold;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header ul{
+  list-style: none;
+}
+
+.main-header a{
+  color: #000000;
+  font-weight: 700;
+}
+
+.main-header a:hover,
+.main-header a:focus{
+  color: #81b3d2;
+}
+
+.main-header a:active{
+  color: #a9a9a9;
+}
+
+.main-header a.active{
+  color: #766357;
+}
+
+.index-top .top-text-big {
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.index-top .top-text-small {
+  text-align: center;
+}
+
+.features h2 {
+  font: inherit;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.feature-img-right, .feature-img-left {
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #81b3d2;
+}
+
+.feature-icon {
+  text-align: center;
+}
+
+.features-alternative {
+  text-align: center;
+}
+
+.order-form {
+  text-align: center;
+}
+
+.order-form .bottom-text-big{
+  font: inherit;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.order-form .submit-button,
+.order-form-button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
   font-size: 21px;
   line-height: 26px;
-  }
+  font-weight: 700;
+  vertical-align: middle;
+  text-transform: uppercase;
 
-legend {
-  font-weight: bold;
+  border: none;
+}
+
+.order-form-button {
+  background-color: #766357;
+}
+
+.order-form-button:hover,
+.order-form-button:focus {
+  background-color: #604e43;
+}
+
+.order-form-button:active {
+  background-color: #503e33;
+}
+
+.order-form .submit-button {
+  background-color: #81b3d2;
+}
+
+.order-form .submit-button:hover,
+.order-form .submit-button:focus {
+  background-color: #669ec0;
+}
+
+.order-form .submit-button:active {
+  background-color: #5496bd;
+}
+
+.order-form fieldset {
+  border: none;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.order-form-field label {
+  font-weight: 700;
+}
+
+.order-form-field input {
+  font: inherit;
+
+  text-align: left;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.order-form-field button {
+  border: none;
+  background-color: #ffffff;
+}
+
+.order-form-field svg{
+  fill: #a9a9a9;
+}
+
+.number-less:hover svg,
+.number-less:focus svg,
+.number-more:hover svg,
+.number-more:focus svg,
+.calendar:hover svg,
+.calendar:focus svg{
+  fill: #000000;
+}
+
+.number-less:active svg,
+.number-more:active svg,
+.calendar:active svg{
+  fill: #81b3d2;}
+
+
+.main-footer .footer-tag {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.footer-social a {
+  color: inherit;
+
+  font-weight: 700;
+}
+
+.footer-logo b {
+  font: inherit;
+}
+
+.footer-logo-link svg {
+  fill: #000000;
+}
+
+.footer-logo-link:hover svg,
+.footer-logo-link:focus svg {
+  fill: #81b3d2;
+}
+
+.footer-logo-link:active svg {
+  fill: #a9a9a9;
+}
+
+.form-hotels {
+  background: #81b3d2 url("../img/inner-form-background.jpg") no-repeat;
+  color: #ffffff;
+}
+
+.form-hotels fieldset {
+  border: none;
+}
+
+.form-hotels legend,
+.form-hotels .price-legend {
+  font: inherit;
   font-size: 16px;
   line-height: 21px;
-/*color: white;*/
-  }
+  font-weight: 700;
+}
+
+
+
+.form-hotels .submit-button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: 2px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 2px;
+}
+
+.form-hotels .submit-button:hover,
+.form-hotels .submit-button:focus {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.form-hotels .range-filter {
+  border: 2px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 2px;
+}
+
+.range-filter label {
+  font: inherit;
+}
+
+.range-filter input {
+  font: inherit;
+
+  text-align: left;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.search-results .found {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.search-results .sort-buttons {
+  list-style: none;
+}
+
+.sort-buttons li {
+  font: inherit;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-button {
+  color: #b2b2b2;
+  text-decoration-line: underline;
+  text-decoration-color: #81b3d2;
+  text-decoration-style: dashed;
+}
+
+.sort-button-current {
+  color: #81b3d2;
+  text-decoration: none;
+}
+
+.sort-arrows button {
+  border: none;
+  background-color: #ffffff;
+}
+
+.sort-up svg,
+.sort-down svg {
+  fill: #a9a9a9;
+}
+
+.sort-up:hover svg,
+.sort-up:focus svg,
+.sort-down:hover svg,
+.sort-down:focus svg {
+  fill: #000000;
+}
+
+.sort-up:active svg,
+.sort-down:active svg,
+ .sort-up-active svg,
+ .sort-down-active svg{
+  fill: #81b3d2;
+}
+
+.hotel-name a {
+  font: inherit;
+  color: #000000;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.hotel-name a:hover,
+.hotel-name a:focus {
+  color: #81b3d2;
+}
+
+.hotel-name a:active {
+  color: #a9a9a9;
+}
+
+.hotel-features .housing-type,
+.hotel-features .housing-price {
+  font: inherit;
+}
+
+.housing-info a {
+  font: inherit;
+
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #81b3d2;
+}
+
+.housing-info a:hover,
+.housing-info a:focus {
+  background-color: #669ec0;
+}
+
+.housing-info a:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+.housing-book a {
+  font: inherit;
+
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #766357;
+}
+
+.housing-book a:hover,
+.housing-book a:focus {
+  background-color: #604e43;
+}
+
+.housing-book a:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-features .housing-rating {
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
 
 .visually-hidden{
   position: absolute;
