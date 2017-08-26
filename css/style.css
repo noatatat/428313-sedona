@@ -389,3 +389,248 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
   }
+
+
+/*-----------------------------------------*/
+
+html{
+  background-color: #f2f2f2;
+
+  /*
+  min-width: 1200px;
+  min-height: 2762px;*/
+}
+
+
+body {
+  width: 1200px;
+  margin:0 auto;
+  padding: 0;
+
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+
+  /*
+  background-image: url("../../sedona/preview/sedona-index-1200.jpg");
+  background-size: 1280px auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-width: 1200px;
+  min-height: 2762px;*/
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 73px;
+}
+
+.site-navigation li {
+  min-width: 128px;
+  min-height: 56px;
+
+  padding-top: 16px;
+}
+
+.site-navigation li:first-child {
+  margin-right: 112px;
+}
+
+.site-navigation li.main-header-logo {
+margin: 0 auto;
+padding: 0;
+z-index: 1;
+  /* Почему когда их убираю, отрицательный маржин
+  для большой картинки перестает работать?*/
+ width: 138px;
+ height: 70px;
+}
+
+.site-navigation li:nth-child(4) {
+  text-align: right;
+}
+
+.site-navigation li:nth-child(5) {
+  margin-left: 112px;
+
+  text-align: right;
+}
+
+.index-top {
+
+  margin-top: -14px;
+  /**/
+  width: 100%;
+
+}
+
+.index-top .top-image {
+  /**/
+  width: 1200px;
+  height: 508px;
+}
+
+.index-top .top-text-big {
+  margin: 0;
+  padding-top: 56px;
+  padding-left: 312px;
+  padding-right: 312px;
+  padding-bottom: 0;
+}
+
+.index-top .top-text-small{
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 312px;
+  padding-right: 312px;
+  padding-bottom: 50px;
+}
+
+
+.feature-img-right {
+  display: flex;
+
+/*
+background-color: transparent;*/
+}
+
+.feature-img-left {
+  display: flex;
+  flex-direction: row-reverse;
+
+/*
+background-color: transparent;*/
+}
+
+.feature-text-block {
+  width: 400px;
+  height: 256px;
+  box-sizing: border-box;
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.feature-text-block h2 {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+}
+
+.feature-text-block .feature-number {
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 21px;
+
+  line-height: 21px;
+}
+
+.feature-text-block .feature-text {
+  margin: 0;
+  padding: 0;
+
+  line-height: 21px;
+}
+
+.feature-container
+{
+  display: flex;
+}
+
+.feature-container .feature-icon {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 330px;
+  width: 400px;
+}
+
+.feature-icon h2 {
+  margin: 0;
+  padding: 0;
+  padding-top: 160px;
+  padding-bottom: 25px;
+
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.feature-icon p {
+  margin: 0;
+  padding: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  font-size: 14px;
+  line-height: 21px;
+  }
+
+.features-alternative {
+  background-color: #eeeeee;
+  /*
+  background-color: transparent;*/
+}
+
+.order-form-top {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  height: 290px;
+  /*
+  background-color: transparent;*/
+}
+
+.order-form-top p{
+  margin: 0;
+  padding: 0;
+}
+
+.order {
+  margin: 0;
+  padding: 0;
+
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+  width: 568px;
+  height: 395px;
+
+}
+
+
+.order-form .map {
+  z-index: -1;
+  height: 473px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 200;
+
+  background: rgba(255, 255, 255, 0.9);
+  height: 120px;
+}
+
+.main-footer .footer-tag {
+  margin: 0;
+  margin-left: 133px;
+  padding: 0;
+}
+
+
+.main-footer .footer-social {
+  width: 150px;
+
+  /**/
+  min-height: 48px;
+}
+
+.main-footer .footer-logo {
+  margin: 0;
+  margin-right: 101px;
+  padding: 0;
+}

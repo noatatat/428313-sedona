@@ -1,0 +1,22 @@
+* {
+  outline: 1px solid yellow;
+  background: rgba(248, 252, 8, 0.2);
+}
+
+
+header, li {
+  outline: 1px solid red;
+  background: rgba(11, 99, 20, 0.2);
+}
+
+nav, ul, section {
+  outline: 1px solid blue;
+  background: rgba(9, 92, 217, 0.2);
+}
+
+
+h1, h2, h2 {
+outline: 1px solid green;
+background: rgba(217, 9, 23, 0.2);
+
+}
