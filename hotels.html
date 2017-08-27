@@ -6,18 +6,18 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/noramlize.css">
     <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/outline.css">-->
   </head>
-  <body>
+
+  <body class="inner">
     <header class="main-header">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/logo.png" width="138" height="70" alt="Логотип Седоны">
-      </a>
       <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип Седоны"></a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="media.html">Фото и видео</a></li>
           <li><a href="state-map.html">Карта штата</a></li>
-          <li><a class="active">Гостиницы</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -46,81 +46,111 @@
           <p class="hotel-search-text"><input type="checkbox" name="hausing"
             value="apartments" id="apartments" checked><label for="apartments">Апартаменты</label></p>
         </fieldset>
-        <div class="price-range">
-          <p class="price-legend">Стоимость в сутки (Р):</p>
-          <div class="range-filter">
-            <div class="price-controls">
-              <div class="min-price">
-                <label>от <input type="text" value="0" id="min-price"></label>
+        <div class="price-range-input">
+          <div class="price-range">
+            <p class="price-legend">Стоимость в сутки (Р):</p>
+            <div class="range-filter">
+              <div class="price-controls">
+                <div class="min-price">
+                  <label>от <input type="text" value="0" id="min-price"></label>
+                </div>
+                <div class="max-price">
+                  <label>до <input type="text" value="3 000" id="max-price"></label>
+                </div>
               </div>
-              <div class="max-price">
-                <label>до <input type="text" value="3 000" id="max-price"></label>
+              <div class="range-controls">
+                <div class="scale"><div class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
               </div>
-            </div>
-            <div class="range-controls">
-              <div class="scale"><div class="bar"></div></div>
-              <div class="toggle min-toggle"></div>
-              <div class="toggle max-toggle"></div>
             </div>
           </div>
+          <input type="submit" class="submit-button" value="Показать">
         </div>
-
-        <input type="submit" class="submit-button" value="Показать">
       </form>
     </section>
 
     <section class="search-results">
-      <h2  class="visually-hidden">Результаты поиска</h2>
-      <p class="found">Найдено: 3</p>
-      <ul class="sort-buttons">
-        <li>Сортировка</li>
-        <li><a href="#" class="sort-button sort-button-current">По цене</a></li>
-        <li><a href="#" class="sort-button">По типу</a></li>
-        <li><a href="#" class="sort-button">По рейтингу</a></li>
-      </ul>
-      <div class="sort-arrows">
-        <button class="sort-up" type="button">  <!--sort-up-active-->
-          <!--По возрастанию-->
-          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L11 10H0"/></svg>
-        </button>
-        <button class="sort-down sort-down-active" type="button">
-          <!--По убыванию-->
-          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
-        </button>
+      <div class="top-search-results">
+        <h2  class="visually-hidden">Результаты поиска</h2>
+        <p class="found">Найдено: 3</p>
+        <ul class="sort-buttons">
+          <li>Сортировка</li>
+          <li><a href="#" class="sort-button sort-button-current">По цене</a></li>
+          <li><a href="#" class="sort-button">По типу</a></li>
+          <li><a href="#" class="sort-button">По рейтингу</a></li>
+        </ul>
+        <div class="sort-arrows">
+          <button class="sort-up" type="button">  <!--sort-up-active-->
+            <!--По возрастанию-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L11 10H0"/></svg>
+          </button>
+          <button class="sort-down sort-down-active" type="button">
+            <!--По убыванию-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+          </button>
+        </div>
       </div>
 
       <article class="hotel-features">
-        <h3 class="hotel-name"><a href="#">Amara Resort &amp; Spa</a></h3>
-        <div class="hotel-photo"><a href="#"><img src="img/holel-1-small.jpg" width="135" height="90" alt="Amara Resort &amp; Spa"></a></div>
-        <p class="housing-type">Гостиница</p>
-        <p class="housing-price">от 4000 р.</p>
-        <p class="housing-info"><a href="#">Подробнее</a></p>
-        <p class="housing-book"><a href="#">Забронировать</a></p>
+        <div class="hotel-features-info">
+          <h3 class="hotel-name"><a href="#">Amara Resort &amp; Spa</a></h3>
+          <a class="hotel-photo" href="#">
+            <img src="img/hotel-1-small.jpg" width="135" height="90" alt="Amara Resort &amp; Spa">
+          </a>
+          <div  class="housing-type-price">
+            <span>Гостиница</span>
+            <span>от 4000 р.</span>
+          </div>
+          <div class="housing-buttons">
+            <a class="housing-info" href="#">Подробнее</a>
+            <a class="housing-book" href="#">Забронировать</a>
+          </div>
+        </div>
         <div class="housing-rating">
+          <div class="star star-4"></div>
           <p>Рейтинг: 8,5</p>
         </div>
       </article>
 
       <article class="hotel-features">
-        <h3 class="hotel-name"><a href="#">Desert Quail Inn</a></h3>
-        <div class="hotel-photo"><a href="#"><img src="img/holel-2-small.jpg" width="135" height="90" alt="Desert Quail Inn"></a></div>
-        <p class="housing-type">Мотель</p>
-        <p class="housing-price">от 3000 р.</p>
-        <p class="housing-info"><a href="#">Подробнее</a></p>
-        <p class="housing-book"><a href="#">Забронировать</a></p>
+        <div class="hotel-features-info">
+          <h3 class="hotel-name"><a href="#">Desert Quail Inn</a></h3>
+          <a class="hotel-photo" href="#">
+            <img src="img/hotel-2-small.jpg" width="135" height="90" alt="Desert Quail Inn">
+          </a>
+          <div  class="housing-type-price">
+            <span>Мотель</span>
+            <span>от 3000 р.</span>
+          </div>
+          <div class="housing-buttons">
+            <a class="housing-info" href="#">Подробнее</a>
+            <a class="housing-book" href="#">Забронировать</a>
+          </div>
+        </div>
         <div class="housing-rating">
+          <div class="star star-4"></div>
           <p>Рейтинг: 8,9</p>
         </div>
       </article>
 
       <article class="hotel-features">
-        <h3 class="hotel-name"><a href="#">Villas at Poco Diablo</a></h3>
-        <div class="hotel-photo"><a href="#"><img src="img/holel-3-small.jpg" width="135" height="90" alt="Desert Quail Inn"></a></div>
-        <p class="housing-type">Апартаменты</p>
-        <p class="housing-price">от 2000 р.</p>
-        <p class="housing-info"><a href="#">Подробнее</a></p>
-        <p class="housing-book"><a href="#">Забронировать</a></p>
+        <div class="hotel-features-info">
+          <h3 class="hotel-name"><a href="#">Villas at Poco Diablo</a></h3>
+          <a class="hotel-photo" href="#">
+            <img src="img/hotel-3-small.jpg" width="135" height="90" alt="Desert Quail Inn">
+          </a>
+          <div  class="housing-type-price">
+            <span>Апартаменты</span>
+            <span>от 2000 р.</span>
+          </div>
+          <div class="housing-buttons">
+            <a class="housing-info" href="#">Подробнее</a>
+            <a class="housing-book" href="#">Забронировать</a>
+          </div>
+        </div>
         <div class="housing-rating">
+          <div class="star star-4"></div>
           <p>Рейтинг: 9,2</p>
         </div>
       </article>
