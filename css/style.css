@@ -602,7 +602,10 @@ background-color: transparent;*/
 
 .order-form .map {
   z-index: -1;
-  height: 473px;
+  width: 1200px;
+  height: 597px;
+  margin-top: -395px;
+  background: url("../img/map.png") no-repeat center top;
 }
 
 .main-footer {
@@ -610,6 +613,7 @@ background-color: transparent;*/
   justify-content: space-between;
   align-items: center;
   z-index: 200;
+  margin-top: -120px;
 
   background: rgba(255, 255, 255, 0.9);
   height: 120px;
