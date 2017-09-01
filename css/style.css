@@ -1,10 +1,14 @@
 html{
-  background-color: #f2f2f2;
+  overflow-y: scroll;
+}
+
+*{
+/*  outline: 1px solid red;*/
 }
 
 body {
-  width: 1200px;
-  margin:0 auto;
+  /*position: relative;*/
+  margin:0;
   padding: 0;
 
   font-family: 'PT Sans', Arial, sans-serif;
@@ -14,11 +18,21 @@ body {
   color: #000000;
   text-transform: uppercase;
 
-  background-color: #ffffff;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);}
+  background-color: #f2f2f2;
+}
+
 
 a {
   text-decoration: none;
+}
+
+.main-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .main-navigation .main-header-logo {
@@ -26,7 +40,7 @@ a {
   left:50%;
 
   margin: 0;
-  margin-left:-69px;
+  margin-left: -69px;
 
   line-height:0;
 }
@@ -82,6 +96,7 @@ a {
 .main-header a.active{
   color: #766357;
 }
+
 
 .index-top .top-image {
   width: 100%;
@@ -234,7 +249,7 @@ a {
 
 .order-form-top p {
   padding: 0;
-  margin:0;
+  margin: 0;
 }
 
 .order-form-top .bottom-text-big{
@@ -877,13 +892,16 @@ a.housing-book:active {
   align-items: center;
 
   background: white;
-  height: 120px;
+  min-height: 120px;
 }
 
 .footer-absolute {
-  position:absolute;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
   width: 1200px;
-  margin-top: -120px;
+
   background: rgba(255, 255, 255, 0.9);
 }
 
