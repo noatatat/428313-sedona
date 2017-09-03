@@ -104,7 +104,6 @@
                 <label for="arrival">Дата заезда:</label>
                 <input type="text" name="arrival" id="arrival" placeholder="24 апреля 2017">
                 <button type="button" class="calendar">
-                  <!--<img src="img/calendar.svg" width="21" height="22" alt="Календарь">-->
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                     <path d="M19.25 2.025h-2.844V.648c0-.38-.294-.69-.656-.69-.363 0-.656.31-.656.69v1.377h-3.938V.648c0-.38-.294-.69-.655-.69-.362 0-.656.31-.656.69v1.377H5.906V.648c0-.38-.294-.69-.656-.69-.363 0-.657.31-.657.69v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.18.784 22 1.75 22h17.5c.967 0 1.75-.82 1.75-1.836V3.862c0-1.015-.783-1.837-1.75-1.837zm.438 18.14c0 .252-.195.458-.437.458H1.75c-.24 0-.438-.206-.438-.46v-16.3c0-.254.196-.46.438-.46h2.844V4.78c0 .382.294.69.657.69.363 0 .657-.308.657-.69V3.404h3.938V4.78c0 .382.294.69.657.69.36 0 .655-.308.655-.69V3.404h3.938V4.78c0 .382.293.69.656.69.363 0 .657-.308.657-.69V3.404h2.845c.24 0 .437.206.437.46v16.3z"/>
                     <path d="M4.594 8.225H7.22v2.066H4.593zM4.594 11.668H7.22v2.067H4.593zM4.594 15.112H7.22v2.066H4.593zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.78 15.112h2.626v2.066H13.78zM13.78 11.668h2.626v2.067H13.78zM13.78 8.225h2.626v2.066H13.78z"/>
@@ -114,7 +113,7 @@
               <p class="order-form-field">
                 <label for="departure">Дата выезда:</label>
                 <input type="text" name="departure" id="departure" placeholder="4 июля 2017">
-                <button type="button" class="calendar"><!--<img src="img/calendar.svg" width="21" height="22" alt="Календарь">-->
+                <button type="button" class="calendar">
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                     <path d="M19.25 2.025h-2.844V.648c0-.38-.294-.69-.656-.69-.363 0-.656.31-.656.69v1.377h-3.938V.648c0-.38-.294-.69-.655-.69-.362 0-.656.31-.656.69v1.377H5.906V.648c0-.38-.294-.69-.656-.69-.363 0-.657.31-.657.69v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.18.784 22 1.75 22h17.5c.967 0 1.75-.82 1.75-1.836V3.862c0-1.015-.783-1.837-1.75-1.837zm.438 18.14c0 .252-.195.458-.437.458H1.75c-.24 0-.438-.206-.438-.46v-16.3c0-.254.196-.46.438-.46h2.844V4.78c0 .382.294.69.657.69.363 0 .657-.308.657-.69V3.404h3.938V4.78c0 .382.294.69.657.69.36 0 .655-.308.655-.69V3.404h3.938V4.78c0 .382.293.69.656.69.363 0 .657-.308.657-.69V3.404h2.845c.24 0 .437.206.437.46v16.3z"/>
                     <path d="M4.594 8.225H7.22v2.066H4.593zM4.594 11.668H7.22v2.067H4.593zM4.594 15.112H7.22v2.066H4.593zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.78 15.112h2.626v2.066H13.78zM13.78 11.668h2.626v2.067H13.78zM13.78 8.225h2.626v2.066H13.78z"/>
@@ -123,22 +122,28 @@
               </p>
               <p class="order-form-field order-form-number">
                 <label for="adult">Взрослые:</label>
+
                 <button type="button" class="number-less"><!--меньше-->
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="3" viewBox="0 0 12 3"><path d="M0 0h12v3H0z"/></svg>
+                  <p class="visually-hidden">Уменьшить</p>
                 </button>
-                <input type="text" name="adult" id="adult" placeholder=" 2">
+                <input type="text" name="adult" id="adult" placeholder="2">
                 <button type="button" class="number-more"><!--больше-->
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path d="M11 4H7V0H4v4H0v3h4v4h3V7h4"/></svg>
+                  <p class="visually-hidden">Увеличить</p>
                 </button>
+
               </p>
               <p class="order-form-field order-form-number">
                 <label for="childen">Дети:</label>
                 <button type="button" class="number-less"><!--меньше-->
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="3" viewBox="0 0 12 3"><path d="M0 0h12v3H0z"/></svg>
+                  <p class="visually-hidden">Уменьшить</p>
                 </button>
-                <input type="text" name="childen" id="childen" placeholder=" 0">
+                <input type="text" name="childen" id="childen" placeholder="0">
                 <button type="button" class="number-more"><!--больше-->
                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path d="M11 4H7V0H4v4H0v3h4v4h3V7h4"/></svg>
+                 <p class="visually-hidden">Увеличить</p>
                 </button>
               </p>
               <input type="submit" class="submit-button button" value="Найти">
