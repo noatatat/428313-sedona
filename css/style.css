@@ -298,12 +298,17 @@ a {
 
 .order {
   position: absolute;
-  top: 0;
+  right: 0;
+  left: 0;
+  width: 568px;
+  margin: auto;
+  padding: 0;
+  /*top: 0;
   left: 50%;
   width: 568px;
   margin: 0;
   margin-left: -284px;
-  padding: 0;
+  padding: 0;*/
   font-size: 0;
   background-color: #ffffff;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
@@ -665,7 +670,7 @@ a {
   border: 8px solid white;
   background: #ababab;
   border-radius: 50%;
-  box-shadow: 0 2px 0 0 #ababab;
+  box-shadow: 0 2px 0 0 rgba(171, 171, 171, 0.3);
   cursor: pointer;
 }
 
