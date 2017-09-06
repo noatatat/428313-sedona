@@ -310,8 +310,29 @@ a {
   z-index: 3;
   }
 
+@keyframes hide {
+  0% { top: 0;
+  }
+  100%
+  { top: -410px;
+  }
+}
+/*
+.order-open {
+  animation-name: hide;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+*/
+
 .order-hidden {
-  top: -410px;
+  animation-name: hide;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+/*  top: -410px;*/
 }
 
 @keyframes shake {
@@ -319,7 +340,6 @@ a {
   100% {
     transform: translateX(0);
   }
-
   10%,
   30%,
   50%,
@@ -327,7 +347,6 @@ a {
   90% {
     transform: translateX(-6px);
   }
-
   20%,
   40%,
   60%,
