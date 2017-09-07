@@ -303,12 +303,6 @@ a {
   width: 568px;
   margin: auto;
   padding: 0;
-  /*top: 0;
-  left: 50%;
-  width: 568px;
-  margin: 0;
-  margin-left: -284px;
-  padding: 0;*/
   font-size: 0;
   background-color: #ffffff;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
@@ -322,22 +316,29 @@ a {
   { top: -410px;
   }
 }
-/*
-.order-open {
-  animation-name: hide;
-  animation-duration: 1s;
-  animation-direction: reverse;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
+
+@keyframes open {
+  0% { top: -410px;
+  }
+  100%
+  { top: 0;
+  }
 }
-*/
+
+.order-open {
+  animation-name: open;
+  animation-duration: 0.5s;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in;
+}
 
 .order-hidden {
   animation-name: hide;
   animation-duration: 0.5s;
+  animation-direction: normal;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
-/*  top: -410px;*/
 }
 
 @keyframes shake {
