@@ -16,7 +16,7 @@ var storageChildren = localStorage.getItem("children");
 
 formButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-
+  orderForm.classList.remove("order-error");
   if (!orderOpen && !orderHidden) {
     orderForm.classList.add("order-hidden");
     orderHidden = orderForm.classList.contains("order-hidden");;
