@@ -14,12 +14,6 @@ body {
   background-color: #f2f2f2;
 }
 
-button,
-input[type="submit"],
-input[type="checkbox"] + label{
-  cursor: pointer;
-}
-
 a {
   text-decoration: none;
 }
@@ -236,14 +230,12 @@ a {
 }
 
 .button {
-  display: inline-block;
   width: 568px;
   padding: 30px;
   line-height: 26px;
 }
 
 .order .submit-button {
-  display: inline-block;
   width: 458px;
   padding: 16px;
   margin-top: 56px;
@@ -410,6 +402,7 @@ a {
 
 .order-form-number {
   display: inline-flex;
+  vertical-align: middle;
   margin-bottom: 0;
   width: 229px;
   box-sizing: border-box;
@@ -505,6 +498,7 @@ a {
   padding-right: 72px;
   box-sizing: border-box;
   color: #ffffff;
+  background-color: #5a6c7b;
   background-image: url("../img/inner-form-background.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -612,6 +606,7 @@ a {
 
 .price-controls div{
   display: inline-flex;
+  vertical-align: baseline;
   align-items: baseline;
   width: 50%;
   padding: 5px 0;
@@ -855,6 +850,7 @@ a {
 
 .housing-type-price span{
   display: inline-block;
+  vertical-align: baseline;
   min-width: 110px;
   margin-right: 2px;
 }
@@ -1088,6 +1084,13 @@ a.housing-book:active {
 
 .footer-logo-link:active svg {
   fill: #a9a9a9;
+}
+
+.main-wrapper button,
+.hotel-search input[type="submit"],
+.order input[type="submit"],
+.hotel-search input[type="checkbox"] + label{
+  cursor: pointer;
 }
 
 .visually-hidden{
