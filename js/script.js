@@ -10,9 +10,6 @@ var childrenNumberLess = document.querySelector(".children-count .number-less");
 var childrenNumberMore = document.querySelector(".children-count .number-more");
 var orderOpen = orderForm.classList.contains("order-open");
 var orderHidden = orderForm.classList.contains("order-hidden");
-var storageAdult = localStorage.getItem("adult");
-var storageChildren = localStorage.getItem("children");
-
 
 formButton.addEventListener("click", function (evt) {
   evt.preventDefault();
