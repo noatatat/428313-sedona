@@ -602,6 +602,7 @@ a {
 
 .price-range-input .price-legend {
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .price-controls div{
